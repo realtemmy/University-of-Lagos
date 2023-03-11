@@ -25,7 +25,12 @@ int main()
     {
         printf("Enter hourly rate of the worker ($00.00): ", hourlyRate);
         scanf("%f", &hourlyRate);
-        if (hoursWorked <= 40)
+        if (hoursWorked < 0)
+        {
+            printf("Number of hours worked cannot be negative");
+            return;
+        }
+        else if (hoursWorked <= 40)
         {
             grossPay = hoursWorked * hourlyRate;
             printf("Salary is %.2f \n", grossPay);

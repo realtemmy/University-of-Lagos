@@ -13,13 +13,15 @@ int main(void)
 
     for (int i = 0; i < 5; i++)
     {
-        printf("\nEnter a number: ", number);
+        printf("\nEnter a number between 1 and 30: ", number);
         scanf("%d", &number);
+        if (number < 1 || number > 30)
+            printf("Number must be between 1 and 30");
+            break;
         for (int i = 0; i < number; i++)
         {
             printf("*");
         }
-        
     }
 
     return 0;

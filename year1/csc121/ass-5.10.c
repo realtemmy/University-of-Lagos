@@ -8,7 +8,7 @@
 int main()
 {
     double y;
-    float x;
+    double x;
     printf("Enter a number: ");
     scanf("%f", &x);
 

@@ -1,6 +1,7 @@
 {
     "files.associations": {
         "ass3-18c": "c",
-        "stdio.h": "c"
+        "stdio.h": "c",
+        "cmath": "c"
     }
 }

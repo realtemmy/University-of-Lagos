@@ -11,7 +11,8 @@
 
 int randomNumber(int start, int stop);
 
-int main(){
+int main()
+{
     int start;
     int stop;
     printf("Enter start: ", start);
@@ -21,9 +22,10 @@ int main(){
 
     srand(time(NULL));
 
-    printf("Random number generated between %d and %d is  %d",start, stop, randomNumber(start, stop));
+    printf("Random number generated between %d and %d is  %d", start, stop, randomNumber(start, stop));
 }
 
-int randomNumber(int start,int stop){
+int randomNumber(int start, int stop)
+{
     return start + (rand() % stop);
 }

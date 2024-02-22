@@ -1,11 +1,12 @@
 //  A prime number is any natural number greater than 1 that is divisible only by 1 and by itself.
-// Write a C program that reads an integer and determines whether it is a prime number or not .
+// Write a C program that reads an integer and determines whether it is a prime number or not.
 
 #include <stdio.h>
 
 int main()
 {
     int number;
+    int flag;
     printf("Enter number to check if prime: ", number);
     scanf("%d", &number);
     for (int i = 2; i < number; i++)
@@ -13,11 +14,13 @@ int main()
         // if number can be divided by no less than number and not the number itself then its not a prime number
         if (number % i == 0)
         {
-            printf("Is not a prime number");
+           flag = 0;
         }
-        else
+        if(number % i != 0)
         {
-            printf("Is a prime number");
+           flag = 1;
         }
     }
+
+    printf("%d", flag);
 }
